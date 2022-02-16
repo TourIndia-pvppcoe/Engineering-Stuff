@@ -101,18 +101,16 @@
   .navbar__container {
     display: flex;
     justify-content: space-between;
-    height: 60px;
-    width: 100%;
-    width: 1300px;
+    /* width: 100%; */
+    /* width: 1300px; */
     padding: 0;
   }
   .navbar__menu {
     display: grid;
     grid-template-columns: auto;
-    margin-top: 30px;
     width: 100%;
     position: absolute;
-    /* top: -1300px; */
+    top: -1000px;
     opacity: 1;
     transition: all 0.5 ease;
     z-index: -1;
@@ -120,12 +118,17 @@
   }
   .navbar__menu.active {
     background: #131313;
-    top: 100%;
+    top: 60%;
     opacity: 1;
     transform: all 0.5 ease;
-    z-index: 9;
+    /* z-index: 9; */
     height: 60vh;
     font-size: 1.6rem;
+  }
+  .navbar__links:hover {
+    color: #0084ff;
+    transition: all 0.3s ease;
+    font-size: 1.8rem;
   }
   .nav_Logo {
     display: flex;
@@ -139,14 +142,20 @@
     font-size: 1.5rem;
   }
   .navbar__toggle .bar {
+    display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background-color: #ffff;
+    background: #fc00ff;
+    background: -webkit-linear-gradient(to left, #00dbde, #fc00ff);
+    background: linear-gradient(to left, #00dbde, #fc00ff);
+    border-radius: 4px;
+    cursor: pointer;
   }
   .navbar__item {
     width: 100%;
+    margin: -100px 0px;
   }
   .navbar__links {
     text-align: center;
@@ -164,6 +173,45 @@
     width: 80%;
     margin: auto;
     height: 80px;
-
+  }
+  #mobile_menu {
+    display: block;
+    position: absolute;
+    top: 23%;
+    right: 9%;
+    transform: translate(5%, 20%);
+  }
+  #mobile_menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  #mobile_menu.is-active .bar:nth-child(1) {
+    transform: translate(0px, 8px) rotate(45deg);
+    background: #0066fe; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #00f8e3,
+      #1ec7fa
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #00f8d7,
+      #165df8
+    );
+    width: 30px;
+  }
+  #mobile_menu.is-active .bar:nth-child(3) {
+    transform: translate(0px, -8px) rotate(-45deg);
+    background: #0066fe; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #00f8e3,
+      #1ec7fa
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #00f8d7,
+      #165df8
+    ); 
+    width: 30px;
   }
 }

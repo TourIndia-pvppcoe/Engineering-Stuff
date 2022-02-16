@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro-To-Development</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="SessionMain.css">
     <link rel="shortcut icon" href="/education.png" type="image/x-icon">
 </head>
 
@@ -29,8 +30,66 @@
             </ul>
         </div>
     </nav>
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__heading">
+                Choose your <span id="colu">COLOR</span>
+            </h1>
+            <p class="hero__desc">
+                Unlimited Possibilities
+            </p>
+            <button class="main_btn"><a href="#">Explore</a></button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js"></script>
+    <script>
+
+        // const menu = document.querySelector('#mobile_menu');
+        // const menuLinks = document.querySelector('.navbar__menu');
+        // // Display Mobile Menu :
+        // const mobileMenu = () => {
+        //     menu.classList.toggle('is-active');
+        //     menuLinks.classList.toggle('active');
+
+        // }
+        // menu.addEventListener('click', mobileMenu);
+        // menuLinks.addEventListener('click', mobileMenu); 
+        $(document).ready(function () {
+            $('#mobile_menu').click(function () {
+                $('#mobile_menu').toggleClass('is-active');
+                $('.navbar__menu').toggleClass('active');
+            })
+            // $('#colu').hover(function () {
+            //     $('#colu').toggleClass('is-active');
+            //     $('#colu').animate({
+            //         transition: 'all 0.3s ease',
+            //         fontSize: '103px',
+            //     })
+            // })
+            // $('#colu').mouseleave(function () {
+            //     $('#colu').animate({
+            //         fontSize: '100px',
+            //     })
+
+            // })
+
+        });
+    </script>
 
 </body>
 
