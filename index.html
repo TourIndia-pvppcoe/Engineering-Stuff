@@ -2,19 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intro-To-Development</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="SessionMain.css">
-    <link rel="shortcut icon" href="/education.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="SessionMain.css" />
+    <link rel="stylesheet" href="AboutSess.css" />
+    <link rel="shortcut icon" href="/education.png" type="image/x-icon" />
 </head>
 
 <body>
     <nav class="navbar">
         <div class="navbar__container">
-            <div class="nav_Logo"><img src="/education.png" alt="College">
+            <div class="nav_Logo">
+                <img src="/education.png" alt="College" />
                 <a href="#home" id="navbar__logo">College</a>
             </div>
             <div class="navbar__toggle" id="mobile_menu">
@@ -23,42 +25,47 @@
                 <span class="bar"></span>
             </div>
             <ul class="navbar__menu">
-                <li class="navbar__item"><a href="#home" class="navbar__links" id="home-page">Home</a></li>
-                <li class="navbar__item"><a href="#project" class="navbar__links" id="pro-page">Project</a></li>
-                <li class="navbar__item"><a href="#about" class="navbar__links" id="contact-page">About</a></li>
-                <li class="navbar__btn"><a href="#sign-up" class="button" id="signup">Sign Up</a></li>
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#project" class="navbar__links" id="pro-page">Project</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="contact-page">About</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#sign-up" class="button" id="signup">Sign Up</a>
+                </li>
             </ul>
         </div>
     </nav>
     <!-- Hero Section -->
     <div class="hero" id="home">
         <div class="hero__container">
-            <h1 class="hero__heading">
-                Choose your <span id="colu">COLOR</span>
-            </h1>
-            <p class="hero__desc">
-                Unlimited Possibilities
-            </p>
-            <button class="main_btn"><a href="#">Explore</a></button>
+            <h1 class="hero__heading">Choose your <span id="colu">COLOR</span></h1>
+            <p class="hero__desc">Unlimited Possibilities</p>
+            <button class="main__btn"><a href="#">Explore</a></button>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
+    <!--About Session  -->
+    <div class="main" id="about">
+        <div class="main__container">
+            <div class="main__img__cont">
+                <div class="main__img-card">ICON</div>
+            </div>
+            <div class="main__content">
+                <h1>What do we do</h1>
+                <h2>We help Businesses Scale</h2>
+                <p>Schedule a call to learn about our Services</p>
+                <button class="main__btn"><a href="#">Schedule Call</a></button>
+            </div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <script>
-
         // const menu = document.querySelector('#mobile_menu');
         // const menuLinks = document.querySelector('.navbar__menu');
         // // Display Mobile Menu :
@@ -68,12 +75,12 @@
 
         // }
         // menu.addEventListener('click', mobileMenu);
-        // menuLinks.addEventListener('click', mobileMenu); 
+        // menuLinks.addEventListener('click', mobileMenu);
         $(document).ready(function () {
-            $('#mobile_menu').click(function () {
-                $('#mobile_menu').toggleClass('is-active');
-                $('.navbar__menu').toggleClass('active');
-            })
+            $("#mobile_menu").click(function () {
+                $("#mobile_menu").toggleClass("is-active");
+                $(".navbar__menu").toggleClass("active");
+            });
             // $('#colu').hover(function () {
             //     $('#colu').toggleClass('is-active');
             //     $('#colu').animate({
@@ -87,10 +94,8 @@
             //     })
 
             // })
-
         });
     </script>
-
 </body>
 
 </html>

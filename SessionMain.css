@@ -86,3 +86,25 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+.highlight {
+  border-bottom: 4px solid rgb(132, 0, 255);
+}
+@media screen and (max-width: 768px) {
+  .hero__heading {
+    font-size: 60px;
+  }
+  #colu:hover {
+    font-size: 62px;
+  }
+  .hero__desc {
+    font-size: 40px;
+  }
+  .hero__desc:hover {
+    font-size: 42px;
+    background: #1eeefd;
+    background: linear-gradient(to left, #54f8f0, #24f7db);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
