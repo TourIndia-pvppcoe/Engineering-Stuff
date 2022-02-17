@@ -91,7 +91,7 @@
 }
 @media screen and (max-width: 768px) {
   .hero {
-    padding: 90px 0px;
+    padding: 25px 0px;
   }
   .hero__heading {
     font-size: 60px;
