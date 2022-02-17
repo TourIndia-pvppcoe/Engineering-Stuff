@@ -147,13 +147,18 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    padding: 0px 20px;
 
+  }
+  .main__content h2{
+    font-size: 3rem;
   }
   .main__img-card{
     width:320px;
     height: 300px;
     margin-top: -110px;
     margin-bottom: 30px;
+
   }
   .fa-layer-group,
   .fa-users{
