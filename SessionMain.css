@@ -90,6 +90,9 @@
   border-bottom: 4px solid rgb(132, 0, 255);
 }
 @media screen and (max-width: 768px) {
+  .hero {
+    padding: 90px 0px;
+  }
   .hero__heading {
     font-size: 60px;
   }
