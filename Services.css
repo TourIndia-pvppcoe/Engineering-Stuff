@@ -1,0 +1,95 @@
+.services {
+  background: #131313;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10rem 0;
+}
+.services h1 {
+  background: #fc00ff;
+  background-image: linear-gradient(to right, #fc00ff, #00dbde);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  background-size: 100%;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+}
+.services__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.services__card {
+  margin: 10px 20px;
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+.services__card:nth-child(2) {
+  background: #00f260;
+  background: linear-gradient(131deg, #0575e6, #00f260);
+}
+.services__card:nth-child(3) {
+  background: #00c6ff;
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+.services__card:nth-child(4) {
+  background: #8e2de2;
+  background: linear-gradient(to right, #4a00e0, #8e2de2);
+}
+.services__card h2 {
+  text-align: center;
+}
+.services__card p {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 20px;
+}
+.services__card button {
+  color: #fff;
+  padding: 14px 24px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #121213;
+}
+.services__card button:hover {
+  cursor: pointer;
+}
+.services__card:hover {
+  cursor: pointer;
+  transform: scale(1.065);
+  transition: 0.3s ease-in;
+}
+.services__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+@media screen and (max-width: 1300px) {
+  .services__wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 760px) {
+  .services__card {
+    margin: 15px 0;
+    width: 290px;
+  }
+
+  .services__wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+}

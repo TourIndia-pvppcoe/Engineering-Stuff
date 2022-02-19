@@ -8,6 +8,7 @@
     <title>Intro-To-Development</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="SessionMain.css" />
+    <link rel="stylesheet" href="Services.css" />
     <link rel="stylesheet" href="AboutSess.css" />
     <link rel="shortcut icon" href="education.png" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/ed62d1b56e.js" crossorigin="anonymous"></script>
@@ -30,13 +31,13 @@
                     <a href="#home" class="navbar__links" id="home-page">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#project" class="navbar__links" id="pro-page">Project</a>
+                    <a href="#about" class="navbar__links" id="service-page">About</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="#about" class="navbar__links" id="contact-page">About</a>
+                    <a href="#services" class="navbar__links" id="about-page">Services</a>
                 </li>
                 <li class="navbar__btn">
-                    <a href="#sign-up" class="button" id="signup">Sign Up</a>
+                    <a href="#project" class="button" id="signup">Sign Up</a>
                 </li>
             </ul>
         </div>
@@ -65,6 +66,49 @@
             </div>
         </div>
     </div>
+    <!-- Services Session -->
+    <div class="services" id="services">
+        <h1>Our Services</h1>
+        <div class="services__wrapper">
+            <div class="services__card">
+                <h2>Custom Colorways</h2>
+                <p>AI Powred Technology</p>
+                <div class="services__btn"><button>Get Started</button></div>
+            </div>
+            <div class="services__card">
+                <h2>Are you Ready?</h2>
+                <p>Suitable Colors</p>
+                <div class="services__btn"><button>Get Started</button></div>
+            </div>
+            <div class="services__card">
+                <h2>Custom Gradients</h2>
+                <p>New-In-Built-Tool</p>
+                <div class="services__btn"><button>Get Started</button></div>
+            </div>
+            <div class="services__card">
+                <h2>Cloud Hosting</h2>
+                <p>AWS System -{In-Built}</p>
+                <div class="services__btn"><button>Get Started</button></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Features Session -->
+    <div class="main" id="project">
+        <div class="main__container op">
+            <div class=" main__content">
+                <h1>Join Our Team</h1>
+                <h2>Sign Up Today</h2>
+                <p>See what makes us Different</p>
+                <button class="main__btn"><a href="#">Sign Up</a></button>
+            </div>
+            <div class="main__img__cont dept">
+                <div class="main__img-card kept">
+                    <i class="fas fa-users"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js"></script>
@@ -79,25 +123,25 @@
         // }
         // menu.addEventListener('click', mobileMenu);
         // menuLinks.addEventListener('click', mobileMenu);
-        $(document).ready(function () {
-            $("#mobile_menu").click(function () {
-                $("#mobile_menu").toggleClass("is-active");
-                $(".navbar__menu").toggleClass("active");
-            });
-            // $('#colu').hover(function () {
-            //     $('#colu').toggleClass('is-active');
-            //     $('#colu').animate({
-            //         transition: 'all 0.3s ease',
-            //         fontSize: '103px',
-            //     })
-            // })
-            // $('#colu').mouseleave(function () {
-            //     $('#colu').animate({
-            //         fontSize: '100px',
-            //     })
+        // $(document).ready(function () {
+        //     $("#mobile_menu").click(function () {
+        //         $("#mobile_menu").toggleClass("is-active");
+        //         $(".navbar__menu").toggleClass("active");
+        //     });
+        // $('#colu').hover(function () {
+        //     $('#colu').toggleClass('is-active');
+        //     $('#colu').animate({
+        //         transition: 'all 0.3s ease',
+        //         fontSize: '103px',
+        //     })
+        // })
+        // $('#colu').mouseleave(function () {
+        //     $('#colu').animate({
+        //         fontSize: '100px',
+        //     })
 
-            // })
-        });
+        // })
+        // });
     </script>
 </body>
 

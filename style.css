@@ -37,13 +37,13 @@
 #navbar__logo {
   background: #fc00ff;
   background-image: linear-gradient(to right, #fc00ff, #00dbde);
-  background-size: 100%;
-  font-weight: bold;
-  font-size: 1.8rem;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  background-size: 100%;
+  font-size: 1.8rem;
+  font-weight: bold;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -91,6 +91,11 @@
   background: linear-gradient(to right, #ff6a00, #ee0979);
   color: white;
   transition: all 0.3s ease;
+}
+.highlight {
+  border-bottom: 4px solid rgb(132, 0, 255);
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
 }
 .navbar__links:hover {
   color: #0084ff;
@@ -192,12 +197,9 @@
       #00f8e3,
       #1ec7fa
     ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #00f8d7,
-      #165df8
-    );
+    background: linear-gradient(to right, #00f8d7, #165df8);
     width: 30px;
+    transition: all 0.3s ease;
   }
   #mobile_menu.is-active .bar:nth-child(3) {
     transform: translate(0px, -8px) rotate(-45deg);
@@ -207,11 +209,7 @@
       #00f8e3,
       #1ec7fa
     ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #00f8d7,
-      #165df8
-    ); 
+    background: linear-gradient(to right, #00f8d7, #165df8);
     width: 30px;
   }
 }
